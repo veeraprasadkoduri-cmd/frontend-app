@@ -1,0 +1,80 @@
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Card */
+.container {
+    background: white;
+    width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #d10000;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #ff416c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,65,108,0.4);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #d10000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background: #a00000;
+}
+
+/* Thank You Message */
+.thank-you {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    display: none;
+}

@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t blood-app .'
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                sh 'docker run -d -p 4000:80 blood-app'
+            }
+        }
+    }
+}
